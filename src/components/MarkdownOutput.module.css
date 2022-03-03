@@ -1,0 +1,6 @@
+.output-area {
+    width: 47%;
+    height: 100vh;
+    /* border: 2px solid blue; */
+    background: lightgray;
+}

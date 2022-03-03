@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import classes from './RawInputArea.module.css';
 
 const RawInputArea = (props) => {
     const handleFormData = (event) => {
@@ -8,10 +9,9 @@ const RawInputArea = (props) => {
 
     const textAreaRef = useRef();
     return (
-        <form onSubmit={handleFormData}>
-            <textarea ref={textAreaRef}></textarea>
-            <button>Transform</button>
-        </form>
+        <>
+            <div contentEditable="true" className={classes.editor}></div>
+        </>
     );
 };
 
